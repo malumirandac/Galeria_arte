@@ -1,6 +1,9 @@
 // Carrusel de Imágenes
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
+
+slides[currentSlide].classList.add('active');
+
 const slideInterval = setInterval(nextSlide, 5000);
 
 function nextSlide() {
@@ -30,5 +33,3 @@ function prevSlide() {
     slides[currentSlide].classList.add('active');
 }
 
-// Otras funciones y eventos
-// ...

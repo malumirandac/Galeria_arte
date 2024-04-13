@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whatever Art Gallery</title>
     <link rel="stylesheet" href="styles.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
@@ -26,47 +27,33 @@
 </header>
 
 <main>
-    <section id="home">
-        <div class="carousel">
-            <div class="slide">
-                <img src="galeria-2.png" alt="Imagen 1">
-                <div class="slide-content">
-                    <h2>Masterpieces Of The Department Of Prints And Drawings</h2>
-                    <p>Come to visit one of our most valious expositions of the year in our new room</p>
-                    <a href="https://bienalsaco.com" class="btn">More info</a>
+    <div class="form-container">
+        <div class="image-section">
+            <img src="image-contact.png" alt="Imagen de fondo">
+        </div>
+        <div class="form-section">
+            <h2>Contact form</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="nombre">Name</label>
+                    <input type="text" id="nombre" name="nombre" required>
                 </div>
-            </div>
-            <div class="slide">
-                <img src="galeria-3.png" alt="Imagen 2">
-                <div class="slide-content">
-                    <h2>Minimalism that isn't that much and don't want to be either</h2>
-                    <p>What is to be anyways? Take this trip to the minimalism curatory of diferents artists</p>
-                    <a href="https://www.theminimalists.com/minimalism/" class="btn">More info</a>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-            </div>
+                <div class="input-group">
+                    <label for="asunto">Subject</label>
+                    <input type="text" id="asunto" name="asunto" required>
+                </div>
+                <div class="input-group">
+                    <label for="mensaje">Message</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
         </div>
-        <div class="prev-next">
-            <a href="#" class="prev">&#10094;</a>
-            <a href="#" class="next">&#10095;</a>
-        </div>
-    </section>
-
-    <section id="quote-section">
-        <div class="quote-content">
-            <blockquote>"To live a creative life, we must lose our fear of being wrong"</blockquote>
-            <cite>- Joseph Chilton Pearce</cite>
-        </div>
-    </section>
-
-    <section id="featured" class="featured-bg" style="background-image: url('galeria-4.png');">
-        <div >
-            <div class="featured-content">
-                <h2>Welcome To The Art And History Collection</h2>
-                <p>Not only the outstanding quality of the collection, but also our high level of activity in the areas of research.</p>
-                <a href="#" class="btn">More about</a>
-            </div>
-        </div>
-    </section>
+    </div>
 </main>
 
 <footer>
