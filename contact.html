@@ -14,7 +14,7 @@
 <header>
     <div class="header-content">
         <div class="header-logo">
-            <h1>Whatever Gallery Art</h1>
+            <a href="index.html"><h1>Whatever Gallery Art</h1></a>
         </div>
         <nav>
             <ul>
@@ -29,7 +29,7 @@
 <main>
     <div class="form-container">
         <div class="image-section">
-            <img src="image-contact.png" alt="Imagen de fondo">
+            <img src="images/image-contact.png" alt="Imagen de fondo">
         </div>
         <div class="form-section">
             <h2>Contact form</h2>
@@ -43,12 +43,26 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="input-group">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="input-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address">
+                </div>
+                <div class="input-group">
                     <label for="asunto">Subject</label>
-                    <input type="text" id="asunto" name="asunto" required>
+                    <select name="asunto" id="asunto" required>
+                        <option value="buy-art">Buy art</option>
+                        <option value="sell-art">Sell art</option>
+                        <option value="inquiries">Inquiries</option>
+                        <option value="group-tours">Group Tours</option>
+                        <option value="other">Other</option>
+                    </select>
                 </div>
                 <div class="input-group">
                     <label for="mensaje">Message</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Explain your issue please" required></textarea>
                 </div>
                 <button type="submit">Submit</button>
             </form>
@@ -60,9 +74,11 @@
     <div class="footer-container">
         <div class="footer-column">
             <h3>Admission Prices</h3>
-            <p>Adults: $15.000</p>
-            <p>Students: $3.000</p>
-            <p>Third age: $4.000</p>
+            <ul>
+                <li><p>Adults: $15.000</p></li>
+                <li><p>Students: $3.000</p></li>
+                <li><p>Third age: $4.000</p></li>
+            </ul>
         </div>
         <div class="footer-column">
             <h3>Opening Hours</h3>
